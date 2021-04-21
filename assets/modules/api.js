@@ -27,7 +27,7 @@ export const postData = async(object) => {
         if (!response.ok) throw new Error("failed to post")
 
         const data = await response.json()
-        alert(`Product with ${data.id} got created`)
+        alert(`Product with ${data._id} got created`)
     } catch (error) {
         alert(error.message, error)
     }

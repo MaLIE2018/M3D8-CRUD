@@ -1,0 +1,15 @@
+.productrow {
+    height: 90vh;
+    overflow: auto;
+}
+
+.productrow .card {
+    transition: all 0.3s ease;
+}
+
+.productrow .card:hover {
+    box-shadow: 5px 5px 2px 1px rgba(136, 136, 136, 0.2);
+    transform: scale(1.06);
+    cursor: pointer;
+    /* box-shadow: 0 0.4px 7.2px -11px rgba(0, 0, 0, 0.022), 0 1px 18.2px -11px rgba(0, 0, 0, 0.031), 0 2.1px 37.2px -11px rgba(0, 0, 0, 0.039), 0 4.4px 76.7px -11px rgba(0, 0, 0, 0.048), 0 12px 210px -11px rgba(0, 0, 0, 0.07); */
+}
