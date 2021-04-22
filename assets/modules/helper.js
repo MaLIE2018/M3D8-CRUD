@@ -1,4 +1,5 @@
 // Create our number formatter.
+// how to use helper.formatter.format(Number)
 export let formatter = new Intl.NumberFormat('de-DE', {
     style: 'currency',
     currency: 'EUR',
