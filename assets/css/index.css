@@ -1,6 +1,5 @@
 .productrow {
     height: 90vh;
-    overflow: auto;
 }
 
 .productrow .card {
@@ -12,4 +11,16 @@
     transform: scale(1.06);
     cursor: pointer;
     /* box-shadow: 0 0.4px 7.2px -11px rgba(0, 0, 0, 0.022), 0 1px 18.2px -11px rgba(0, 0, 0, 0.031), 0 2.1px 37.2px -11px rgba(0, 0, 0, 0.039), 0 4.4px 76.7px -11px rgba(0, 0, 0, 0.048), 0 12px 210px -11px rgba(0, 0, 0, 0.07); */
+}
+
+.table {
+    table-layout: fixed;
+    cursor: pointer;
+}
+
+.table td,
+th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

@@ -1,6 +1,8 @@
-export const getData = async() => {
+export const endpoint = "https://striveschool-api.herokuapp.com/api/product/"
+
+export const getData = async(endpoin) => {
     try {
-        let response = await fetch("https://striveschool-api.herokuapp.com/api/product/", {
+        let response = await fetch(endpoin, {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
@@ -13,10 +15,17 @@ export const getData = async() => {
     }
 }
 
-export const postData = async(object) => {
+export const postData = async(object, id) => {
+    let endpoint = "https://striveschool-api.herokuapp.com/api/product/"
+    if (id) {
+        endpoint += id
+        method = "PUT"
+    } else {
+        method = "POST"
+    }
     try {
-        let response = await fetch("https://striveschool-api.herokuapp.com/api/product/", {
-            method: "POST",
+        let response = await fetch(endpoint, {
+            method,
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',

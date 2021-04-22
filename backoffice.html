@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <title>Backoffice</title>
 </head>
 
@@ -34,18 +34,23 @@
         <div class="row d-flex justify-content-center">
             <form class="product-form w-50">
                 <div class="form-group">
+                    <label for="_id">ID</label>
+                    <input type="text" class="form-control" id="_id" placeholder="id will be generated" disabled>
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Name of the product">
+                    <input type="text" class="form-control" id="name" placeholder="Name of the product" required>
                     <label for="description">Description</label>
-                    <input type="text" class="form-control" id="description" placeholder="Description">
+                    <input type="text" class="form-control" id="description" placeholder="Description" required>
                     <label for="brand">Brand</label>
-                    <input type="text" class="form-control" id="brand" placeholder="brand name">
+                    <input type="text" class="form-control" id="brand" placeholder="brand name" required>
                     <label for="imageUrl">Image URL</label>
-                    <input type="text" class="form-control" id="imageUrl" placeholder="Url">
+                    <input type="text" class="form-control" id="imageUrl" placeholder="Url" required>
                     <label for="price">Price</label>
-                    <input type="number" class="form-control" id="price" placeholder="price in Euro">
+                    <input type="number" class="form-control" id="price" placeholder="price in Euro" required>
                 </div>
-                <button type="submit" class="btn btn-primary float-right">Submit</button>
+                <button type="submit" class="btn btn-primary float-right"><ion-icon name="add-circle-outline"></ion-icon></button>
+                <button type="button" class="backoffice-delbtn btn btn-danger float-right mx-1"><ion-icon name="close-circle-outline"></ion-icon></button>
+                <button type="button" class="backoffice-editbtn btn btn-light float-right mx-1"><ion-icon name="create-outline"></ion-icon></button>
+
             </form>
         </div>
     </div>
